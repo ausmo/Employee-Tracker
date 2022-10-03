@@ -13,13 +13,14 @@ title varchar(30) not null,
 salary decimal not null,
 department_id int not null
 );
-CREATE TABLE employees(
+CREATE TABLE employee(
 id int not null auto_increment primary key,
 first_name varchar(30) not null,
 last_name varchar(30) not null,
 role_id int not null,
 manager_id int not null
 );
+
 
 insert into department(name) values
 ('Administration'),
@@ -37,7 +38,7 @@ insert into role(salary, title, department_id) values
 (50.00, 'Customer_Service_Rep','5'),
 (200.00, 'Accountant','6');
 
-insert  into employees(first_name, last_name, role_id, manager_id)
+insert  into employee(first_name, last_name, role_id, manager_id)
  values 
 ('Diane','Murphy','1','1'),
 ('Mary','Patterson','2','1'),
