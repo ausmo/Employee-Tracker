@@ -72,6 +72,7 @@ function loadMainPrompts() {
           name: "View Total Utilized Budget By Department",
           value: "VIEW_UTILIZED_BUDGET_BY_DEPARTMENT",
         },
+
         {
           name: "quit",
           value: "QUIT",
@@ -123,7 +124,8 @@ function loadMainPrompts() {
       case "REMOVE_ROLE":
         removeRole();
         break;
- default:
+
+      default:
         quit();
     }
   });
